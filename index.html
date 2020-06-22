@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- import font poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+
+    <title>Todo List</title>
+  </head>
+
+  <body>
+    <div class="page-transparent">
+      <!-- Header Title -->
+      <header>
+        <h1>Todos List</h1>
+      </header>
+
+      <!-- Add Todo Form -->
+      <form>
+        <input
+          type="text"
+          class="todo-input"
+          placeholder="Make Your Todos Here"
+        />
+        <button type="submit" class="todo-button">
+          <i class="fas fa-plus-square"></i>
+        </button>
+      </form>
+
+      <!-- search and filter Todo Form -->
+      <form class="search-container">
+        <input
+          type="text"
+          class="search-todos"
+          placeholder="Find Your Todos Here"
+        />
+
+        <div class="select">
+          <select name="todos" class="filter-todo">
+            <option value="" disabled selected>Filter Todo</option>
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+      </form>
+
+      <!-- Todo list container -->
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+    </div>
+    <!-- script.js -->
+    <script src="app.js"></script>
+  </body>
+</html>
